@@ -1,16 +1,53 @@
-# React + Vite
+# Form&Fun Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, minimal React project inspired by the Form&Fun website.  
+Built with Vite, Tailwind CSS, and Motion for smooth, modern animations.
 
-Currently, two official plugins are available:
+## Tech Stack
+- React.js  
+- Vite  
+- Tailwind CSS  
+- Motion (for animations)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Responsive layout  
+- Animated brand carousel  
+- Minimal footer section  
+- Smooth transitions and hover effects  
 
-## React Compiler
+## Product Structure
+FORM-AND-FUN/
+├── node_modules/
+├── public/
+│   ├── fonts/
+│   ├── favico.png
+│   ├── fonnts.com-4556.zip
+│   ├── logo.svg
+│   └── vite.svg
+├── src/
+│   ├── assets/
+│   ├── component/
+│   │   ├── Awards.jsx
+│   │   ├── CapabilityCard.jsx
+│   │   ├── CapabilityCarousel.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── lottie.svg
+│   │   ├── Nav.jsx
+│   │   ├── ProjectCard.jsx
+│   │   ├── StudioSection.jsx
+│   │   ├── VideoCarousel.jsx
+│   │   └── WorkSection.jsx
+│   ├── data/
+│   │   └── index.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   └── Layout.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+└── index.html
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
