@@ -15,39 +15,37 @@ Built with Vite, Tailwind CSS, and Motion for smooth, modern animations.
 - Minimal footer section  
 - Smooth transitions and hover effects  
 
-## Product Structure
-FORM-AND-FUN/
-├── node_modules/
-├── public/
-│   ├── fonts/
-│   ├── favico.png
-│   ├── fonnts.com-4556.zip
-│   ├── logo.svg
-│   └── vite.svg
-├── src/
-│   ├── assets/
-│   ├── component/
-│   │   ├── Awards.jsx
-│   │   ├── CapabilityCard.jsx
-│   │   ├── CapabilityCarousel.jsx
-│   │   ├── Footer.jsx
-│   │   ├── Header.jsx
-│   │   ├── lottie.svg
-│   │   ├── Nav.jsx
-│   │   ├── ProjectCard.jsx
-│   │   ├── StudioSection.jsx
-│   │   ├── VideoCarousel.jsx
-│   │   └── WorkSection.jsx
-│   ├── data/
-│   │   └── index.jsx
-│   ├── pages/
-│   │   ├── Home.jsx
-│   │   └── Layout.jsx
-│   ├── App.css
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
-├── .gitignore
-├── eslint.config.js
-└── index.html
-
+## Product Structure## 📁 Project Structure
+- **node_modules/**  
+- **public/**
+  - **fonts/**
+  - `favico.png`
+  - `fonnts.com-4556.zip`
+  - `logo.svg`
+  - `vite.svg`
+- **src/**
+  - **assets/**
+  - **component/**
+    - `Awards.jsx`
+    - `CapabilityCard.jsx`
+    - `CapabilityCarousel.jsx`
+    - `Footer.jsx`
+    - `Header.jsx`
+    - `lottie.svg`
+    - `Nav.jsx`
+    - `ProjectCard.jsx`
+    - `StudioSection.jsx`
+    - `VideoCarousel.jsx`
+    - `WorkSection.jsx`
+  - **data/**
+    - `index.jsx`
+  - **pages/**
+    - `Home.jsx`
+    - `Layout.jsx`
+  - `App.css`
+  - `App.jsx`
+  - `index.css`
+  - `main.jsx`
+- `.gitignore`
+- `eslint.config.js`
+- `index.html`
