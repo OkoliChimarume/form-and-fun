@@ -1,11 +1,11 @@
 import React from "react";
-import Nav from "../component/Nav";
+import Header from "../component/Header";
 import Footer from "../component/Footer";
 
 export default function Layout({ children }) {
   return (
     <div className="px-[1rem]">
-      <Nav />
+      <Header />
       {children}
       <Footer />
     </div>
