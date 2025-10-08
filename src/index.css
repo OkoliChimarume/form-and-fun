@@ -50,6 +50,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Aeonik";
+  max-width: 2000px;
 }
 .transluscent-overlay {
   background-color: #36383b0f;
