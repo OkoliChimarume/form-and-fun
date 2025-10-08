@@ -53,7 +53,7 @@ export default function VideoCarousel() {
           >
             <video
               src={url}
-              className="w-full h-[480px] object-cover"
+              className="w-[21rem] md:w-full lg:w-full h-[480px] object-cover"
               loop
               autoPlay
               muted
