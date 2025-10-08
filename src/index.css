@@ -29,7 +29,7 @@
   box-sizing: border-box;
   font-family: "Aeonik";
 }
-.transluscent-overlay{
+.transluscent-overlay {
   background-color: #36383b0f;
 }
 .no-scrollbar {
@@ -1315,6 +1315,9 @@ html {
 
 .h-\[8\.93rem\] {
   height: 8.93rem !important;
+}
+.h-\[50vh\] {
+  height: 50vh !important;
 }
 
 .h-\[8rem\] {
@@ -3440,6 +3443,10 @@ html {
     height: 4.375rem !important;
   }
 
+  .\md\:h-\[40rem\] {
+    height: 40rem !important;
+  }
+
   .md\:w-\[330px\] {
     width: 330px !important;
   }
@@ -3450,6 +3457,10 @@ html {
 
   .md\:w-\[40ch\] {
     width: 40ch !important;
+  }
+
+  .md\:w-\[30rem\] {
+    width: 30rem !important;
   }
 
   .md\:w-\[75\%\] {
@@ -3514,6 +3525,13 @@ html {
     font-size: 1.25rem !important;
     line-height: 1.75rem !important;
   }
+  .md\:text-6xl {
+    font-size: 3rem !important;
+    line-height: 4.25rem !important;
+  }
+  .md\:grid-cols-\[0\.5fr_2fr_1fr_1fr_60px\] {
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 60px !important;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -3549,6 +3567,10 @@ html {
   .lg\:my-7 {
     margin-top: 1.75rem !important;
     margin-bottom: 1.75rem !important;
+  }
+  .lg\:my-\[5rem\] {
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
   }
 
   .lg\:mb-10 {
@@ -3653,9 +3675,20 @@ html {
   .lg\:h-\[35rem\] {
     height: 35rem !important;
   }
-
+  .lg\:h-\[50vh\] {
+    height: 50vh !important;
+  }
+  .lg\:h-\[90vh\] {
+    height: 90vh !important;
+  }
+  .lg\:h-\[43rem\] {
+    height: 43rem !important;
+  }
   .lg\:h-\[374px\] {
     height: 374px !important;
+  }
+  .lg\:h-\[55vh\] {
+    height: 55vh !important;
   }
 
   .lg\:h-fit {
@@ -3851,6 +3884,9 @@ html {
   .lg\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
   }
+  .lg\:grid-cols-\[0\.5fr_2fr_1fr_1fr_60px\] {
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 60px !important;
+  }
 
   .lg\:flex-row {
     flex-direction: row !important;
@@ -3878,6 +3914,9 @@ html {
 
   .lg\:gap-10 {
     gap: 2.5rem !important;
+  }
+  .lg\:gap-20 {
+    gap: 12.5rem !important;
   }
 
   .lg\:gap-2 {
@@ -4087,6 +4126,10 @@ html {
     padding-bottom: 3rem !important;
   }
 
+  .lg\:py-\[5rem\] {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
   .lg\:pb-4 {
     padding-bottom: 1rem !important;
   }
@@ -4144,6 +4187,10 @@ html {
     font-size: 1.875rem !important;
     line-height: 2.25rem !important;
   }
+  .lg\:text-7xl {
+    font-size: 3.75rem !important;
+    line-height: 5.25rem !important;
+  }
 
   .lg\:text-\[1\.75rem\] {
     font-size: 1.75rem !important;
@@ -4151,6 +4198,9 @@ html {
 
   .lg\:text-\[35rem\] {
     font-size: 35rem !important;
+  }
+  .lg\:text-\[6rem\] {
+    font-size: 6rem !important;
   }
 
   .lg\:text-base {

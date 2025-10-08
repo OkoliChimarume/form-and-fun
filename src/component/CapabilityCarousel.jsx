@@ -36,10 +36,10 @@ export default function CapabilityCarousel() {
     <div>
       <section className="overflow-hidden whitespace-nowrap text-[#E5E5E5] my-[2rem]">
         <div className="animate-slide flex">
-          <p className="text-[6rem] font-[arial] tracking-tight px-8">
+          <p className="text-[3rem] lg:text-[6rem] font-[arial] tracking-tight px-8">
             MOTION SPATIAN VR GEN-AI AR GAMING VIRTUAL FASHION IMMERSE BRAND
           </p>
-          <p className="text-[6rem] font-[arial] tracking-tight px-8">
+          <p className="text-[3rem] lg:text-[6rem] font-[arial] tracking-tight px-8">
             MOTION SPATIAN VR GEN-AI AR GAMING VIRTUAL FASHION IMMERSE BRAND
           </p>
         </div>

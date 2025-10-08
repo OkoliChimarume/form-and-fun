@@ -5,7 +5,7 @@ const Awards = () => {
   return (
     <section className="w-full px-4 md:px-8 lg:px-16">
     
-      <h2 className="text-[6vw] font-bold leading-none text-[#1D1D1D] mt-[6rem] mb-[5rem]">
+      <h2 className="text-[3rem] uppercase lg:text-[6rem] font-bold leading-none text-[#1D1D1D] my-[3rem] lg:my-[5rem]">
         AN AWARD
         <br />
         WINNING STUDIO
@@ -15,7 +15,7 @@ const Awards = () => {
         {awardsData.map((award) => (
           <div
             key={award.id}
-            className="grid grid-cols-[0.5fr_2fr_1fr_1fr_60px] border-b border-gray-300 py-10 gap-x-6 items-start"
+            className="grid md:grid-cols-[0.5fr_2fr_1fr_1fr_60px] lg:grid-cols-[0.5fr_2fr_1fr_1fr_60px] border-b border-gray-300 py-10 gap-y-[1rem] lg:gap-x-6 items-start"
           >
             <p className="text-xs text-gray-600 tabular-nums">{award.id}</p>
 

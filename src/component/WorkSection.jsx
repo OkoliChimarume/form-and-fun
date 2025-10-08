@@ -3,21 +3,21 @@ import ProjectCard from "./ProjectCard";
 
 export default function WorkSection() {
   return (
-    <section className="py-32 px-6 text-[#1D1D1D]">
+    <section className="py-32 text-[#1D1D1D]">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-1 gap-6">
-          <h2 className="text-[6rem] font-[arial]">Work</h2>
-          <div className="">
+          <h2 className="text-[3rem] uppercase lg:text-[6rem] font-[arial]">Work</h2>
+          <div className="hidden md:flex flex-col items-end">
             <p className="text-sm font-bold">Selected Work</p>
             <p className="text-gray-400 text-base">(22-25)</p>
           </div>
         </div>
         <section className="overflow-hidden whitespace-nowrap text-[#E5E5E5]">
           <div className="animate-slide flex">
-            <p className="text-[6rem] font-[arial] tracking-tight px-8">
+            <p className="text-[3rem] lg:text-[6rem] font-[arial] tracking-tight px-8">
               MOTION SPATIAN VR GEN-AI AR GAMING VIRTUAL FASHION IMMERSE BRAND
             </p>
-            <p className="text-[6rem] font-[arial] tracking-tight px-8">
+            <p className="text-[3rem] lg:text-[6rem] font-[arial] tracking-tight px-8">
               MOTION SPATIAN VR GEN-AI AR GAMING VIRTUAL FASHION IMMERSE BRAND
             </p>
           </div>
@@ -54,7 +54,6 @@ export default function WorkSection() {
             />
           </div>
         </div>
-        ;
       </div>
     </section>
   );

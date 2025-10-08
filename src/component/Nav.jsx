@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
+  const isMobile = window.innerWidth < 768;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,31 +18,35 @@ export default function Nav() {
         <div className="flex justify-between items-center">
           <img src="/logo.svg" alt="logo" className="w-[28px] h-[28px]" />
         </div>
-        <div className="font-aeonik">
-          <p
+        {!isMobile && (
+          <div className="font-aeonik">
+            <p
+              className={`flex justify-between items-center transition-transform duration-400 ease-in-out ${
+                scrolled ? "-translate-y-[3rem]" : "translate-y-0"
+              }`}
+            >
+              Form&Fun
+            </p>
+            <p
+              className={`absolute left-[20vw] top-[10px] flex items-center justify-center transition-transform duration-400 ease-in-out ${
+                scrolled
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-[1rem]"
+              }`}
+            >
+              Creative Technology Studio
+            </p>
+          </div>
+        )}
+        {!isMobile && (
+          <div
             className={`flex justify-between items-center transition-transform duration-400 ease-in-out ${
               scrolled ? "-translate-y-[3rem]" : "translate-y-0"
             }`}
           >
-            Form&Fun
-          </p>
-          <p
-            className={`absolute left-[20vw] top-[10px] flex items-center justify-center transition-transform duration-400 ease-in-out ${
-              scrolled
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-[1rem]"
-            }`}
-          >
-            Creative Technology Studio
-          </p>
-        </div>
-        <div
-          className={`flex justify-between items-center transition-transform duration-400 ease-in-out ${
-            scrolled ? "-translate-y-[3rem]" : "translate-y-0"
-          }`}
-        >
-          <p className="text-aeonik">Creative Technology Studio</p>
-        </div>
+            <p className="text-aeonik">Creative Technology Studio</p>
+          </div>
+        )}
         <div className="flex justify-between items-center flex-end">
           <nav className="flex justify-between gap-[1rem] items-center">
             <p>Studio</p>

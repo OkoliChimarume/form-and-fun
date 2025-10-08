@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Nav from "./Nav";
 
@@ -22,7 +22,7 @@ export default function Header() {
           className={`!max-w-[45.63rem] transition-all duration-500 ease-in-out ${
             isLoading
               ? "h-screen flex justify-center items-center bg-white"
-              : "h-[50vh]"
+              : "h-[30vh] lg:h-[50vh]"
           }`}
         >
           <DotLottieReact

@@ -30,7 +30,7 @@ export default function StudioSection() {
 
   return (
     <div>
-      <section ref={sectionRef} className="py-[5rem] bg-white">
+      <section ref={sectionRef} className="py-[3rem] lg:py-[5rem] bg-white">
         <div className="max-w-7xl mx-auto">
           <p className="leading-tight mb-16 font-light flex flex-wrap items-center">
             <h4 className="text-[13px] mb-[3rem] uppercase tracking-wider text-[black]">
@@ -39,7 +39,7 @@ export default function StudioSection() {
             {words.map((word, index) => (
               <span
                 key={index}
-                className={`sm:text-[30px] md:text-[50px] text-[60px] inline-block mr-3 transition-all duration-500 ${
+                className={`text-[30px] md:text-6xl lg:text-7xl inline-block mr-3 transition-all duration-500 ${
                   index === 0 ? "ml-[20%]" : ""
                 } ${
                   visibleWords.includes(index)

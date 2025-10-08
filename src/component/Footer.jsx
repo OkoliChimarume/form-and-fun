@@ -4,11 +4,11 @@ export default function Footer() {
   return (
     <footer className="w-full mt-[4rem]">
       <section>
-        <div className="flex justify-between items-start w-full text-black">
+        <div className="flex justify-between items-start w-full text-black gap-6">
           <div className="">
             <img src="/logo.svg" alt="logo" className="w-[40px] h-[40px]" />
           </div>
-          <div className=" flex gap-[12rem] basis-[50%]">
+          <div className=" flex flex-wrap gap-6 lg:gap-20 lg:basis-[50%]">
             <div className="flex justify-between w-[13rem] pb-8 gap-5 cursor-pointer">
               <div>
                 <h6 className="text-[#9A9A9A]">Menu</h6>
@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
       </section>
       <section>
-        <h1 className="w-full text-center text-[38vh] text-black">Form&fun</h1>{" "}
+        <h1 className="w-full text-center text-[21vw] font-medium text-black">Form&fun</h1>{" "}
       </section>
     </footer>
   );

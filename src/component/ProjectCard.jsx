@@ -30,7 +30,7 @@ export default function ProjectCard({ title, category, aspect, video, soon }) {
       <video
         src={video}
         ref={videoRef}
-        className="h-full object-cover w-full max-h-[600px]"
+        className="h-full object-cover w-full max-h-[600px] rounded-2xl"
         autoPlay
         loop
         muted
