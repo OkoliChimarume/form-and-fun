@@ -12,18 +12,22 @@ export default function CapabilityCard({
   const isMobile = window.innerWidth < 768;
 
   const handleMouseEnter = () => {
-    setIsHovered(true);
-    if (videoRef.current) {
-      videoRef.current.currentTime = 0;
-      videoRef.current.play();
+    if (!isMobile) {
+      setIsHovered(true);
+      if (videoRef.current) {
+        videoRef.current.currentTime = 0;
+        videoRef.current.play();
+      }
     }
   };
 
   const handleMouseLeave = () => {
-    setIsHovered(false);
-    if (videoRef.current) {
-      videoRef.current.pause();
-      videoRef.current.currentTime = 0;
+    if (!isMobile) {
+      setIsHovered(false);
+      if (videoRef.current) {
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0;
+      }
     }
   };
 
@@ -53,6 +57,7 @@ export default function CapabilityCard({
             muted
             loop
             playsInline
+            autoPlay={isMobile ? true : false}
             preload="metadata"
           />
         </figure>
