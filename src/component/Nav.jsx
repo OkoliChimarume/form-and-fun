@@ -17,10 +17,29 @@ export default function Nav() {
         <div className="flex justify-between items-center">
           <img src="/logo.svg" alt="logo" className="w-[28px] h-[28px]" />
         </div>
-        <div className="flex justify-between items-center">
-          <p className="font-aeonik">Form&Fun</p>
+        <div className="font-aeonik">
+          <p
+            className={`flex justify-between items-center transition-transform duration-400 ease-in-out ${
+              scrolled ? "-translate-y-[3rem]" : "translate-y-0"
+            }`}
+          >
+            Form&Fun
+          </p>
+          <p
+            className={`absolute left-[20vw] top-[10px] flex items-center justify-center transition-transform duration-400 ease-in-out ${
+              scrolled
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-[1rem]"
+            }`}
+          >
+            Creative Technology Studio
+          </p>
         </div>
-        <div className="flex justify-between items-center">
+        <div
+          className={`flex justify-between items-center transition-transform duration-400 ease-in-out ${
+            scrolled ? "-translate-y-[3rem]" : "translate-y-0"
+          }`}
+        >
           <p className="text-aeonik">Creative Technology Studio</p>
         </div>
         <div className="flex justify-between items-center flex-end">
