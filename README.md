@@ -15,7 +15,7 @@ Built with Vite, Tailwind CSS, and Motion for smooth, modern animations.
 - Minimal footer section  
 - Smooth transitions and hover effects  
 
-## Product Structure## 📁 Project Structure
+## Product Structure##
 - **node_modules/**  
 - **public/**
   - **fonts/**
