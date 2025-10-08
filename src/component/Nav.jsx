@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
+   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -11,7 +12,16 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  return (
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2500);
+
+    return () => clearTimeout(timer);
+  }, []);
+  
+  return isLoading? null : (
     <div className="fixed top-0 left-0 right-0 z-50 w-full bg-[white] text-[black]">
       <div className="flex justify-between ml-[1rem] mr-[2rem] py-[0.6rem] items-center text-[15px] font-aeonik">
         <div className="flex justify-between items-center">
