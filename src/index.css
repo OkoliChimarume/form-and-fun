@@ -22,7 +22,29 @@
 
   font-display: swap;
 }
+/* src/index.css or src/app.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -54,6 +76,26 @@
   animation: slide 20s linear infinite;
 }
 
+.video-skeleton {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    rgb(229, 231, 235),
+    rgb(209, 213, 219),
+    rgb(229, 231, 235)
+  );
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.video-skeleton-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 *,
 ::before,
 ::after {
