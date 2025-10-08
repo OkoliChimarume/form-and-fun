@@ -47,7 +47,7 @@ export default function StudioSection() {
                     : "opacity-30 text-primary"
                 }`}
               >
-                {word}
+              {word}&nbsp;
               </span>
             ))}
             <a
